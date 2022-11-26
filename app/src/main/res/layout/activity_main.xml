@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral50"
+    android:background="@drawable/ic_launcher_background"
     tools:context=".MainActivity">
 
     <TableLayout
@@ -14,6 +14,8 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             android:gravity="center">
 
             <ImageView
@@ -28,22 +30,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:text="Endrinas"
-                android:textSize="16sp" />
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
-                android:text="0 gramos" />
+                android:fontFamily="sans-serif"
+                android:text="0 gramos"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
             android:gravity="center">
 
             <ImageView
@@ -58,22 +68,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:text="Flores de manzanilla"
-                android:textSize="14sp" />
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
-                android:text="0 flores" />
+                android:fontFamily="sans-serif"
+                android:text="0 flores"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
             android:gravity="center">
 
             <ImageView
@@ -85,26 +103,34 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:text="Granos de café"
-                android:textSize="16sp" />
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
-                android:text="0 granos" />
+                android:fontFamily="sans-serif"
+                android:text="0 granos"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
             android:gravity="center">
 
             <ImageView
@@ -119,21 +145,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:text="Canela"
-                android:textSize="16sp" />
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
-                android:text="0 palos" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:fontFamily="sans-serif"
+                android:text="0 palos"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -154,18 +183,26 @@
                 android:layout_width="5dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif"
                 android:text="Litros anís"
-                android:textSize="16sp" />
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/system_accent3_1000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/editCantAnis"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:fontFamily="serif"
-                android:inputType="number" />
+                android:inputType="number"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
         </TableRow>
     </TableLayout>
 

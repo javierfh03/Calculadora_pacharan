@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/ic_launcher_background"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent">
@@ -38,13 +39,13 @@
 
             <TextView
                 android:id="@+id/textViewEndrina"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:text="@string/endrina"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -66,13 +67,13 @@
 
             <TextView
                 android:id="@+id/textViewManzanilla"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:text="@string/manzanilla"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -103,13 +104,13 @@
 
             <TextView
                 android:id="@+id/textViewCafe"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:text="@string/cafe"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -131,13 +132,13 @@
 
             <TextView
                 android:id="@+id/textViewCanela"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:text="@string/canela"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
         </LinearLayout>

@@ -16,6 +16,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageView
@@ -26,24 +27,12 @@
                 app:srcCompat="@drawable/endrina" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif"
-                android:text="Endrinas"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/system_accent3_1000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif"
-                android:text="0 gramos"
+                android:fontFamily="casual"
+                android:text="0 gramos de endrinas"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/system_accent3_1000"
                 android:textSize="20sp"
@@ -54,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="30dp"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageView
@@ -64,23 +54,11 @@
                 app:srcCompat="@drawable/manzanilla" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif"
-                android:text="Flores de manzanilla"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/system_accent3_1000"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif"
+                android:fontFamily="casual"
                 android:text="0 flores"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/system_accent3_1000"
@@ -92,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="30dp"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageView
@@ -102,24 +81,12 @@
                 app:srcCompat="@drawable/cafe" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif"
-                android:text="Granos de café"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/system_accent3_1000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif"
-                android:text="0 granos"
+                android:fontFamily="casual"
+                android:text="0 granos de café"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/system_accent3_1000"
                 android:textSize="20sp"
@@ -131,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="30dp"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageView
@@ -141,23 +109,11 @@
                 app:srcCompat="@drawable/canela" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif"
-                android:text="Canela"
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/system_accent3_1000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif"
+                android:fontFamily="casual"
                 android:text="0 palos"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/system_accent3_1000"
@@ -168,42 +124,42 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 app:srcCompat="@drawable/anis" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="5dp"
+            <EditText
+                android:id="@+id/editCantAnis"
+                android:layout_width="74dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif"
-                android:text="Litros anís"
+                android:ems="10"
+                android:fontFamily="casual"
+                android:inputType="number"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="litros de anís"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/system_accent3_1000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/editCantAnis"
-                android:layout_width="115dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:fontFamily="serif"
-                android:inputType="number"
-                android:textColor="@color/black" />
-
-            <Space
-                android:layout_width="30dp"
-                android:layout_height="wrap_content" />
         </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

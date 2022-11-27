@@ -2,6 +2,8 @@ package com.calculadora_pacharan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
@@ -12,24 +14,31 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         getSupportActionBar()?.hide()
 
+        val texto = findViewById<TextView>(R.id.editCantAnis)
+        texto.addTextChangedListener(object :TextWatcher{
+            override fun afterTextChanged(p0: Editable?) {}
 
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                calcular()
+            }
+        })
     }
 
-    fun insertarValor(view: View){
-        var endrina = findViewById<TextView>(R.id.textViewCantEndrina).text.toString().toInt()
-        var cafe = findViewById<TextView>(R.id.textViewCantCafe).text.toString().toInt()
-        var canela = findViewById<TextView>(R.id.textViewCantCanela).text.toString().toInt()
-        var manzanilla = findViewById<TextView>(R.id.textViewCantManzanilla).text.toString().toInt()
-        var anis = findViewById<EditText>(R.id.editCantAnis).text.toString().toInt()
+    fun calcular(){
+        val campo = findViewById<EditText>(R.id.editCantAnis).text;
+        var anis = 0
 
-        endrina = anis * 300
-        cafe = anis * 5
-        manzanilla = anis * 5
-        canela = anis * 1
+        if (!campo.toString().equals("")){
+            anis = campo.toString().toInt()
+        }
 
-        findViewById<TextView>(R.id.textViewCantEndrina).text = endrina.toString()
-        findViewById<TextView>(R.id.textViewCantCafe).text = cafe.toString()
-        findViewById<TextView>(R.id.textViewCantCanela).text = canela.toString()
-        findViewById<TextView>(R.id.textViewCantManzanilla).text = manzanilla.toString()
+        if (anis < 100000){
+            findViewById<TextView>(R.id.textViewCantEndrina).text = (anis * 300).toString()
+            findViewById<TextView>(R.id.textViewCantCafe).text = (anis * 5).toString()
+            findViewById<TextView>(R.id.textViewCantCanela).text = (anis * 1).toString()
+            findViewById<TextView>(R.id.textViewCantManzanilla).text = (anis * 5).toString()
+        }
     }
 }

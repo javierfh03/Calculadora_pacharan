@@ -183,7 +183,6 @@
                 android:ems="10"
                 android:fontFamily="casual"
                 android:inputType="number"
-                android:onClick="insertarValor"
                 android:text="@string/valor_inicial"
                 android:textAlignment="center"
                 android:textColor="@color/black" />

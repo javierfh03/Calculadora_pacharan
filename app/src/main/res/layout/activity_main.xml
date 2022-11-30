@@ -185,6 +185,7 @@
                 android:inputType="number"
                 android:text="@string/valor_inicial"
                 android:textAlignment="center"
+                android:backgroundTint="@android:color/black"
                 android:textColor="@color/black" />
 
             <TextView

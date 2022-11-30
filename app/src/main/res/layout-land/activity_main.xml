@@ -163,6 +163,7 @@
                 android:ems="10"
                 android:fontFamily="casual"
                 android:inputType="number"
+                android:backgroundTint="@android:color/black"
                 android:text="@string/valor_inicial"
                 android:textAlignment="center"
                 android:textColor="@color/black" />

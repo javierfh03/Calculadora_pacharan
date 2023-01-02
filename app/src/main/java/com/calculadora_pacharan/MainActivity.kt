@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val campo = findViewById<EditText>(R.id.editCantAnis).text;
         var anis = 0.0
 
-        if (!campo.toString().equals("") && campo.toString().length < 6){
+        if (!campo.toString().equals("") && campo.toString().length < 10){
             anis = campo.toString().toDouble()
         }
 

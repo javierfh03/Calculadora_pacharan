@@ -160,10 +160,10 @@
                 android:id="@+id/editCantAnis"
                 android:layout_width="85dp"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
                 android:ems="10"
                 android:fontFamily="casual"
-                android:inputType="number"
-                android:backgroundTint="@android:color/black"
+                android:inputType="numberDecimal"
                 android:text="@string/valor_inicial"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
